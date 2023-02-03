@@ -12,7 +12,8 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    let url = "https://mail.google.com/mail/"
+    let url = "https://mail.google.com/?ui=html"
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,6 @@ class ViewController: NSViewController {
         let request = URLRequest(url: URL(string: url)!)
         webView.load(request)
     }
+    
 }
 
